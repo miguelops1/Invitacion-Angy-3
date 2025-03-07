@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Miraculous</title>
+    <link rel="stylesheet" href="style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Logo de Ladybug arriba del Miraculous -->
+    <div class="logo-container">
+        <img src="./img/logo-ladybug.png" alt="Logo Ladybug">
+    </div>
+    
+    <!-- Miraculous cerrado -->
+    <div class="container">
+        <div class="miraculous" id="miraculous" onclick="mostrarVideo()"></div>
+    </div>
+
+    <!-- Contenedor del video (debe estar oculto al inicio) -->
+    <div class="video-container" id="video-container">
+        <video id="luckyCharmVideo" controls playsinline>
+            <source src="./videos/lucky-charm.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </div>
+
+    <!-- Invitación (debe estar oculta al inicio) -->
+<div class="invitacion" id="invitacion">
+    <h2>¡Estás invitado a mi Cumpleaños!</h2>
+    <p>Te espero el sábado <strong>8/3 después de las 00:00</strong> en 
+       <a href="https://www.google.com/maps/place/CLUB+21+DE+SEPTIEMBRE/@-34.4187402,-58.7522981,9951m/data=!3m1!1e3!4m6!3m5!1s0x95bca15b900f51d9:0xcff931e33f039fb6!8m2!3d-34.4215316!4d-58.6987152!16s%2Fg%2F11fnky9rzd?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
+       esta ubicación</a>. ¡No faltes y trae escabio rata!</p>
+
+    <!-- Firma de Angy -->
+    <p class="firma">- Angy</p>
+</div>
+
+
+    <script src="script.js"></script>
+    
+    <!-- 🔥 Imagen secreta en la esquina -->
+<div class="easter-egg" onclick="mostrarEasterEgg()">
+    <img src="./img/easter-egg.png" alt="Easter Egg">
+</div>
+
+</body>
+</html>

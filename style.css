@@ -1,0 +1,133 @@
+/* 🔥 Usar imagen de fondo con ligera transparencia */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+                url('./img/miraculous-fondo.png') no-repeat center/cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* 🔥 Asegurar que solo se vea el Miraculous cerrado al inicio */
+.miraculous {
+    width: 300px;
+    height: 300px;
+    background: url('./img/miraculous-cerrado.png') no-repeat center/contain;
+    cursor: pointer;
+    display: block; /* 🔥 Asegurar que sea visible */
+}
+
+/* 🔥 Ocultar el video hasta que se active */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none; /* 🔥 Asegurar que esté oculto */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 🔥 Usar imagen de mariquita como fondo */
+.invitacion {
+    display: none;
+    text-align: center;
+    background: url('./img/mariquita-fondo.jpg') no-repeat center/cover;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 350px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    animation: aparecer 1s ease-in-out;
+}
+
+
+
+
+
+/* 🔥 Efecto de aparición */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* 🔥 Ajustar el estilo del texto dentro de la invitación */
+.invitacion h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.invitacion p {
+    font-size: 16px;
+    color: white;
+}
+
+/* 🔥 Estilo del enlace de ubicación */
+.invitacion a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.invitacion a:hover {
+    text-decoration: underline;
+}
+/* 🔥 Estilo para el logo arriba del Miraculous */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre el logo y el Miraculous */
+}
+
+.logo-container img {
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+/* 🔥 Imagen del Easter Egg oculta en la esquina */
+.easter-egg {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.easter-egg img {
+    width: 100%;
+    height: auto;
+}
+
+/* 🔥 Efecto al pasar el cursor */
+.easter-egg:hover {
+    opacity: 1;
+}
