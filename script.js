@@ -26,6 +26,6 @@ function mostrarVideo() {
 }
 // 🔥 Función para mostrar el mensaje secreto
 function mostrarEasterEgg() {
-    alert("Ningún Miguel fue obligado a hacer esta página 😆");
+    alert("Ningún Miguel fue obligado a hacer esta página x'd");
 }
 
